@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive News Page</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        
+
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+        .image-section {
+            flex: 1;
+        }
+
+        .image {
+
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .news-grid {
+            flex: 2;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 35px;
+        }
+
+        .news-card {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.1s;
+            width: 400px;
+            height: 300px;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+    
+        .news-card h2 {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .news-card p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h1 class="title"><center>Indian News</center> </h1><hr>
+    </header>
+    <div class="container">
+        
+        <div class="image-section">      
+         
+          <h1>Live Report: Asia Cup final - India vs Sri Lanka</h1>
+            By Sidharth Monga<
+            <h6>17 Sep 2023, 6:15 pm</h6><br><br>
+            
+           <h1>Siraj's day of course</h1>
+           <a href ="https://www.espncricinfo.com/series/asia-cup-2023-
+           1388374/sri-lanka-vs-india-final-1388414/live-match-blog">
+           <img src="download4.jpg" height="300px" width="400px" alt="Image"></a>
+
+          <p>It was a lovely display of seam bowling from Mohammed Siraj. Just accurate outswinger and accurate outswinger at high pace. A couple of them even seamed in after pitching to get Sadeera Samarawickrama and Kusal Mendis.
+             These were not wobble-seam balls. Siraj said this was the most and most-consistent swing he has drawn
+              so he just kept bowling outswing.</p><a href=https://www.espncricinfo.com/series/asia-cup-2023-
+              1388374/sri-lanka-vs-india-final-1388414/live-match-blog">read more</a>
+
+        </div>
+
+        <!-- News Grid Section -->
+        <div class="news-grid">
+            
+        
+            <div class="news-card"><a href="https://www.indiatoday.in/india/story/santana-dharma-remark-gujarat-hindu-group-swaminarayan-sect
+                -2435326-2023-09-13?utm_source=recengine&utm_medium=web&referral=yes&utm_content=footerstrip-1&t_
+                source=recengine&t_medium=web&t_content=footerstrip-1&t_psl=False">
+                <h2>'Need new dharma': Now, Sanatana remark by Gujarat's Hindu outfit sparks row</h2>
+                <p>The Swaminarayan Vadtal sect in Gujarat caused controversy when one of its members suggested the idea of a "new dharma," indirectly criticising 'Sanatana Dharma.'
+                    
+                    </p>
+                     <img src="saffron.jpg" height="100px" width="350px"></a>
+            </div>
+
+            
+            <div class="news-card"><a href="https://www.indiatoday.in/world/story/not-trying-to-provoke-india-trudeau-on-his-
+                khalistani-terrorists-murder-claim-2437819-2023-09-19">
+                <h2>'Not looking to provoke or escalate': Trudeau amid diplomatic row with India</h2>
+                <p>Canadian Prime Minister Justin Trudeau’s remark alleging the involvement of "agents of the Indian government" 
+                    in the killing of a Sikh terrorist has sparked a row.</p><br> <br>
+                    <img src="pm.jpg" height="100px" width="350px"></a>
+            </div>
+
+            <div class="news-card"><a href="https://www.indiatoday.in/movies/bollywood/story/jawan-box-office-collection-day-7-srks-film-earns-
+                rs-368-crore-in-india-2435397-2023-09-14?utm_source=recengine&utm_
+                medium=web&referral=yes&utm_content=footerstrip-7&t_source=recengine&t_medium=web&t_content=footerstrip-7&t_psl=True">
+                <h2>'Jawan' box office collection Day 7: SRK's film earns Rs 368 crore in India</h2>
+                <p>Shah Rukh Khan's film 'Jawan' is having a dream run at the box office. In India, it is inching closer to
+                     the Rs 400-crore mark.</p><br><br>
+                    
+                    <img src="jawan,jpg" height="100px" width="350px"></a>
+            </div>
+
+            <div class="news-card"><a href="https://www.indiatoday.in/india/story/womens-reservation
+                -bill-to-be-introduced-in-lok-sabha-today-2437637-2023-09-19">
+                    <h2>
+                        Women's Reservation Bill to come into effect after delimitation. Details here</h2>
+                    <p>The Women's Reservation Bill which will provide 33 per cent reservation for women in the 
+                        Lok Sabha and state Assemblies, will only come into effect after
+                         the next delimitation exercise which is expected to be conducted after 2026.
+                        </p>
+                        <img src="womens.jpg" height="100px" width="350px">
+                         
+                </div>
+             
+    </div>
+</body>
+</html>
